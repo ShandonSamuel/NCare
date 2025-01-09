@@ -119,7 +119,7 @@
     </header>
 
     <div class="label-container">
-        <div class="label">Heart Rate: <span id="heartRate">--</span></div>
+        <div class="label">Heart Rate: <span id="pulse">--</span></div>
         <div class="label">SpO2: <span id="spo2">--</span></div>
         <div class="label">Temperature: <span id="temperature">--</span></div>
         <div class="label">Humidity: <span id="humidity">--</span></div>
@@ -159,7 +159,7 @@
         const database = firebase.database();
 
         const charts = [];
-        let heartRateLabel = document.getElementById('heartRate');
+        let heartRateLabel = document.getElementById('pulse');
         let spo2Label = document.getElementById('spo2');
         let temperatureLabel = document.getElementById('temperature');
         let humidityLabel = document.getElementById('humidity');
