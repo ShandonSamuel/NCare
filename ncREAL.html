@@ -166,7 +166,7 @@
 
         function updateLabels() {
             // Fetch the latest data from Firebase for each key
-            fetchAndPlot('heartrate', 'lineChart1', 'HEART RATE', 0);
+            fetchAndPlot('pulse', 'lineChart1', 'HEART RATE', 0);
             fetchAndPlot('spo2', 'lineChart2', 'SpO2', 1);
             fetchAndPlot('temperature', 'lineChart3', 'Temperature', 2);
             fetchAndPlot('humidity', 'lineChart4', 'Humidity', 3);
@@ -182,7 +182,7 @@
         }
         function updateLabel(key, value) {
             switch (key) {
-                case 'heartrate':
+                case 'pulse':
                     heartRateLabel.textContent = value;
                     break;
                 case 'spo2':
